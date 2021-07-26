@@ -1,0 +1,18 @@
+
+m = int(input('m:'))
+n = int(input('n:'))
+
+matriz = []
+
+for i in range(m):
+    d = []
+    for j in range(n):
+        r = int(input('Enter a term(number) at the place M[{}][{}]:'.format(i,j)))
+        d.append(r)
+    print()
+    matriz.append(d)
+
+for i in range(m):
+    for j in range(n):
+        print(matriz[i][j],end=' ')
+    print()
